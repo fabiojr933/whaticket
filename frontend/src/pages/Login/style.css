@@ -1,0 +1,63 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding: 0 2rem;
+}
+
+.login-content {
+    display: flex;
+    justify-content: flex-end; /* Movendo o formulário para o lado direito */
+    align-items: center;
+    text-align: center;
+    width: 35%; /* Definindo a largura do formulário para 35% */
+}
+
+.form-container {
+    background-color: white; /* Fundo branco do formulário */
+    height: 100%; /* Cobrindo toda a altura da tela */
+    padding: 1rem; /* Reduzindo o padding do formulário */
+    border-radius: 12px; /* Reduzindo o raio da borda do formulário */
+}
+
+.img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%; /* Definindo a largura das imagens para 65% */
+}
+
+.img img {
+    width: 100%;
+}
+
+/* Removendo a transição de imagens */
+.fade-in {
+    animation: none;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Mudando o layout para empilhar em telas menores */
+    }
+
+    .login-content {
+        width: 100%; /* Ocupando toda a largura em telas menores */
+    }
+
+    .img {
+        width: 100%; /* Ocupando toda a largura em telas menores */
+    }
+}
